@@ -4,3 +4,405 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none; /* リンクの下線を無くす */
+}
+
+/* ------------------- header ----------------------- */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  line-height: 70px;
+  color: #fafafa;
+  padding: 0 30px;
+  list-style: none;
+  font-size: 16px;
+  width: 120px;
+}
+
+.nav-list a {
+  color: #fafafa;
+}
+
+/* ------------------- main-visual ----------------------- */
+#main-visual {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #fafafa;
+  background-image: url(img/mv.png);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+
+.main-visual-title {
+  padding-top: 200px;
+  font-size: 64px;
+  color: #fafafa;
+}
+
+.main-visual-text {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+/* ------------------- Portfolio ----------------------- */
+#Portfolio {
+  background-color: #eceff1;
+}
+
+.topic {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 32px;
+  color: #000000;
+}
+
+.topic::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #ec715f;
+}
+
+.topic-text {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+}
+
+.Portfolio-list {
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 250px;
+  margin: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.box1 {
+  background-image: url(img/sketch.jpg);
+}
+
+.box2 {
+  background-image: url(img/websuku.png);
+}
+
+.box3 {
+  background-image: url(img/write.jpg);
+  margin-right: 0%;
+}
+
+.box4 {
+  background-image: url(img/webcamp.png);
+}
+
+.box5 {
+  background-image: url(img/talk.jpg);
+}
+
+.box6 {
+  background-image: url(img/webcamp-mother.png);
+  margin-right: 0%;
+}
+
+/* ------------------- Feature ----------------------- */
+/* #Feature {
+  background-size: cover;
+  background-position: center;
+} */
+
+.strength-group {
+  display: flex;
+  width: auto;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.strength {
+  width: 320px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.strength:last-child {
+  margin-right: 0%;
+}
+
+.strength-title {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.strength-text {
+  font-size: 16px;
+  text-align: left;
+  color: #000000;
+}
+
+/* ------------------- Profile ----------------------- */
+#Profile {
+  background-color: #eceff1;
+}
+
+.profile-group {
+  display: flex;
+  padding: 30px 0 90px 0;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.face {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url(img/my-icon.jpg);
+  margin: 0 auto;
+}
+
+.right-content {
+  width: 50%;
+}
+
+.right-content-title {
+  margin: 20px 0 5px 0;
+  font-size: 20px;
+}
+
+.right-content-title:first-child {
+  margin-top: 0%;
+}
+
+.right-content-text {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* ------------------- Contact ----------------------- */
+.contact-group {
+  display: flex;
+  width: 800px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.left-content-contact {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.left-content-title {
+  margin: 20px 0 5px 0;
+  font-size: 20px;
+}
+
+.left-content-title:first-child {
+  margin-top: 0%;
+}
+
+.left-content-text {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* .right-content-contact {
+  width: 170px;
+  margin: 0 auto;
+} */
+
+.right-content-contact .fab {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.right-content-contact .fab:last-child {
+  margin-right: 0;
+}
+
+/* ------------------- Footer ----------------------- */
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #ec715f;
+  line-height: 60px;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #fafafa;
+  text-align: center;
+}
+
+/* ------------------- 以下、レスポンシブ対応 ----------------------- */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  /* ------------------- header ----------------------- */
+  header {
+    height: 50px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #fafafa;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav-list:last-child {
+    border: none;
+  }
+
+  /* ------------------- main-visual ----------------------- */
+  #main-visual {
+    background-image: url(img/code.png);
+  }
+
+  .main-visual-title {
+    font-size: 40px;
+  }
+
+  .main-visual-text {
+    font-size: 18px;
+  }
+
+  /* ------------------- Portfolio ----------------------- */
+  .Portfolio-list {
+    width: 300px;
+  }
+
+  .box {
+    margin-right: 0;
+  }
+
+  .box:nth-child(odd) {
+    display: none;
+  }
+
+  /* ------------------- Feature ----------------------- */
+  .strength-group {
+    flex-flow: column nowrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    width: 320px;
+  }
+
+  .strength {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .strength:first-child {
+    margin-top: 0;
+  }
+
+  .strength:last-child {
+    margin-right: 0;
+  }
+
+  /* ------------------- Profile ----------------------- */
+  .profile-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .profile-group .left-content {
+    margin-bottom: 20px;
+  }
+
+  /* ------------------- Contact ----------------------- */
+  .contact-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-content-contact {
+    width: 100%;
+  }
+
+  .right-content-contact {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
